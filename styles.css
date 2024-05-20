@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#quote-box {
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-style: groove;
+    border-radius: 10% ;
+}
+
+button {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+    image-resolution: 1200dpi;
+    image-orientation: from-image;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#image-container {
+    position: relative;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.share {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    align-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-decoration-break: clone;
+}
+
+.instagram-story {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    align-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-decoration-break: clone;
+    margin-right: 10px; /* Add this line */
+    text-align: center;
+}
+
+.twitter {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    align-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-decoration-break: clone;
+    margin-right: 10px; /* Add this line */
+    text-align: center;
+}
+
+.whatsapp {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    align-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-decoration-break: clone;
+    text-align: center;
+}
+
+
+.share:hover,.instagram:hover,.twitter:hover,.whatsapp:hover {
+    background-color: #3e8e41;
+}
