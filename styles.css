@@ -139,19 +139,17 @@ img {
 
 }
 
-/* Default styles */
-
-/* Styles for screens with a max width of 600px (e.g., smartphones) */
 @media only screen and (max-width: 600px) {
-    /* Adjustments for small screens */
-}
+    /* Styles for screens with a maximum width of 600px (e.g., smartphones) */
+    #quote-box {
+        width: 90%;
+    }
 
-/* Styles for screens with a min width of 601px and a max width of 1024px (e.g., tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adjustments for medium-sized screens */
-}
+    #new-quote {
+        font-size: 16px;
+    }
 
-/* Styles for screens with a min width of 1025px (e.g., desktops) */
-@media only screen and (min-width: 1025px) {
-    /* Adjustments for large screens */
+    #output-text {
+        font-size: 14px;
+    }
 }
