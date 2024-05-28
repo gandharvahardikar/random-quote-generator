@@ -5,22 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quote Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="image-container">
-        <img src="Protecting Alaska.jpg" width="600" height="600">
+        <img src="Protecting Alaska.jpg" width="600" height="600" alt="Background Image">
         <div id="quote-box">
-          <h1>Random Quote Generator</h1>
-          <p id="quote">Click the button to get a quote!</p>
-          <p id="author"></p>
-          <button id="new-quote">New Quote</button>
-          <div id="social-media">
-            <a href="https://twitter.com/intent/tweet?text=Your%20generated%20quote%20here" class="twitter" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com/stories/share/?story_media_id=YOUR_INSTAGRAM_MEDIA_ID&story_source_id=YOUR_INSTAGRAM_USER_ID&story_text=Your%20generated%20quote%20here" class="instagram-story" target="_blank">Instagram
-            </a>
-            <a href="whatsapp://send?text=Your%20generated%20quote%20here" class="whatsapp" target="_blank">WhatsApp </a>
-          </div>
-        </div>
+            <h1>Random Quote Generator</h1>
+            <div id="quote-display">
+                <blockquote id="quote">Click the button to get a quote!</blockquote>
+                <footer id="author"></footer>
+            </div>
+            <button id="new-quote">New Quote</button>
+            <div id="output-container">
+                <textarea id="output-text" readonly></textarea>
+            </div>
+            <div id="social-media">
+                <a href="https://twitter.com/intent/tweet?text=Your%20generated%20quote%20here" class="twitter" target="_blank">
+                    <i class="bi bi-twitter"></i> Share on Twitter
+                </a>
+                <a href="#" class="instagram" id="share-instagram">
+                    <i class="bi bi-instagram"></i> Share on Instagram
+                </a>
+                <a href="whatsapp://send?text=Your%20generated%20quote%20here" class="whatsapp" target="_blank">
+                    <i class="bi bi-whatsapp"></i> Share on WhatsApp
+                </a>
+            </div>
+            <button id="save-quote">Save Quote <i class="bi bi-download"></i> </button>
+                      
+       </div>
     </div>
     <script src="script.js"></script>
 </body>

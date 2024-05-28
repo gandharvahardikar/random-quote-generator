@@ -10,36 +10,63 @@ body {
 #quote-box {
     position: relative;
     text-align: center;
+    margin-top: 50px;
+    margin-inline-start: 10px;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    padding: 50px;
     border-style: groove;
-    border-radius: 10% ;
+    border-radius: 10%;
+}
+
+blockquote {
+    margin-top: -10px;
 }
 
 button {
-    text-align: justify;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
     border: none;
     background-color: #007BFF;
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-h1{
+#output-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#output-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 10px;
     text-align: center;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: none;
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -5px;
 }
 
 img {
-    image-resolution: 1200dpi;
-    image-orientation: from-image;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,71 +79,62 @@ img {
     position: relative;
 }
 
-.social-media {
+#social-media {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
     padding-top: 10px;
 }
 
-.share {
+#social-media a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    align-content: center;
+    border-radius: 5px;
+    text-decoration: none;
     font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-decoration-break: clone;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.instagram-story {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    align-content: center;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-decoration-break: clone;
-    margin-right: 10px; /* Add this line */
-    text-align: center;
-}
-
-.twitter {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    align-content: center;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-decoration-break: clone;
-    margin-right: 10px; /* Add this line */
-    text-align: center;
-}
-
-.whatsapp {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    align-content: center;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-decoration-break: clone;
-    text-align: center;
-}
-
-
-.share:hover,.instagram:hover,.twitter:hover,.whatsapp:hover {
+#social-media a:hover {
     background-color: #3e8e41;
+}
+
+#social-media .twitter {
+    background-color: #1DA1F2;
+}
+
+#social-media .twitter:hover {
+    background-color: #0d95e8;
+}
+
+#social-media .instagram {
+    background-color: #E4405F;
+}
+
+#social-media .instagram:hover {
+    background-color: #d32e56;
+}
+
+#social-media .whatsapp {
+    background-color: #25D366;
+}
+
+#social-media .whatsapp:hover {
+    background-color: #1db954;
+}
+
+#social-media i {
+    margin-right: 8px; /* Add space between icon and text */
+}
+
+#save-quote{
+    background-color: black;
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 50mm;
+
 }
