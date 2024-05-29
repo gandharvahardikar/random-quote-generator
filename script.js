@@ -65,41 +65,21 @@ function autoAdjustOutputBoxSize() {
 
 // Call the function to initially adjust the size of the output box
 autoAdjustOutputBoxSize();
-// Function to share quote to Instagram
-function shareToInstagram(quote) {
-    // Construct the Instagram share URL with the quote text
-    const instagramUrl = `https://www.instagram.com/stories/share/?story_text=${encodeURIComponent(quote)}`;
-    window.open(instagramUrl, '_blank');
-}
 
-// Event listener for sharing on Instagram
-document.getElementById('share-instagram').addEventListener('click', () => {
-    const quote = document.getElementById('quote').textContent;
-    shareToInstagram(quote);
-});
-
-// Function to save quote as a text file
+// Function to save quote to a text file
 function saveQuoteToFile(quote) {
-    // Create a Blob containing the quote text
     const blob = new Blob([quote], { type: 'text/plain' });
-
-    // Create a temporary link element
+    const filename = 'quote.txt';
     const link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
-
-    // Set the filename for the downloaded file
-    link.download = 'quote.txt';
-
-    // Append the link to the document body and click it programmatically
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
-
-    // Clean up
     document.body.removeChild(link);
 }
 
-// Event listener for saving quote to file
+// Event listener for the "Save Quote" button
 document.getElementById('save-quote').addEventListener('click', () => {
-    const quote = document.getElementById('quote').textContent;
+    const quote = document.getElementById('output-text').value;
     saveQuoteToFile(quote);
 });
